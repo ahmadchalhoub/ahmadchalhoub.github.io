@@ -2,62 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ahmad Chalhoub - Resume</title>
     <style>
-        .resume-section {
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .contact-info {
+            text-align: center;
             margin-bottom: 20px;
         }
-        .job-title {
-            font-weight: bold;
-            font-size: 1.1em;
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
         }
-        .company {
+        .job-entry, .education-entry {
+            margin-bottom: 15px;
+        }
+        .job-title, .education-title {
+            font-weight: bold;
+        }
+        .job-company, .education-institution {
             color: #555;
         }
-        .date {
+        .job-date, .education-date {
             color: #777;
             font-style: italic;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-    </nav>
-    
-    <h1>Professional Resume</h1>
-
-    <div class="resume-section">
-        <h2>Professional Experience</h2>
-        
-        <div>
-            <p class="job-title">Automotive Perception Engineer</p>
-            <p class="company">Mitsubishi Electric Automotive America, Inc.</p>
-            <p class="date">January 2022 - Present</p>
-        </div>
-
-        <div>
-            <p class="job-title">Machine Learning Research Intern</p>
-            <p class="company">Mitsubishi Electric Automotive America, Inc.</p>
-            <p class="date">May 2021 - December 2021</p>
-        </div>
+    <div class="contact-info">
+        <h1>Ahmad Chalhoub</h1>
+        <p>Detroit, MI | 313-652-6093 | chalhoah@udmercy.edu</p>
     </div>
 
-    <div class="resume-section">
-        <h2>Education</h2>
-        
-        <div>
-            <p class="job-title">Master of Science in Computer Science</p>
-            <p class="company">University of Michigan Ann Arbor</p>
-            <p class="date">August 2024 - Present</p>
-        </div>
+    <h2 class="section-title">Objective</h2>
+    <p>Robotics and Mechatronic Systems Engineering graduate from the University of Detroit Mercy, currently an Application Engineer at Mitsubishi Electric Automotive America, Inc. Experienced in developing Machine Learning applications for automotive industry, specifically for embedded systems and infotainment solutions.</p>
 
-        <div>
-            <p class="job-title">Bachelor of Science in Robotics and Mechatronic Systems Engineering</p>
-            <p class="company">University of Detroit Mercy</p>
-        </div>
+    <h2 class="section-title">Hard Skills</h2>
+    <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">Keras</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">ROS</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Agile (Scrum)</span>
     </div>
+
+    <h2 class="section-title">Experience</h2>
+    <div class="job-entry">
+        <p class="job-title">Automotive Perception Engineer</p>
+        <p class="job-company">Mitsubishi Electric Automotive America</p>
+        <p class="job-date">03/2022 - Present</p>
+    </div>
+
+    <div class="job-entry">
+        <p class="job-title">Application Engineer</p>
+        <p class="job-company">Mitsubishi Electric Automotive America</p>
+        <p class="job-date">01/2022 - 03/2022</p>
+    </div>
+
+    <div class="job-entry">
+        <p class="job-title">Machine Learning Research Intern</p>
+        <p class="job-company">Mitsubishi Electric Automotive America</p>
+        <p class="job-date">05/2021 - 12/2021</p>
+    </div>
+
+    <h2 class="section-title">Education</h2>
+    <div class="education-entry">
+        <p class="education-title">BE: Robotics and Mechatronic Systems Engineering</p>
+        <p class="education-institution">University of Detroit Mercy</p>
+        <p class="education-date">08/2017 - 12/2021</p>
+        <p>
+            • Engineering Student of the Year 2021
+            • IEEE Outstanding Senior 2021
+        </p>
+    </div>
+
+    <h2 class="section-title">Projects & Achievements</h2>
+    <ul>
+        <li>3rd Place Winners in IGVC Competition 2021</li>
+        <li>Traffic Sign Detection and Localization for Autonomous EV (Neural Networks, Velodyne Lidar)</li>
+    </ul>
 </body>
 </html>
