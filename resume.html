@@ -32,6 +32,8 @@
         .job-date, .education-date {
             color: #777;
             font-style: italic;
+            font-size: 0.85em;
+            font-weight: normal;
         }
         .skills-list {
             display: flex;
@@ -43,6 +45,11 @@
             padding: 3px 8px;
             border-radius: 3px;
             font-size: 0.9em;
+        }
+        .title-with-date {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
         }
     </style>
 </head>
@@ -58,12 +65,11 @@
     <h2 class="section-title">Hard Skills</h2>
     <div class="skills-list">
         <span class="skill-tag">Python</span>
+        <span class="skill-tag">PyTorch</span>
         <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">Keras</span>
         <span class="skill-tag">C++</span>
         <span class="skill-tag">Git</span>
         <span class="skill-tag">Linux</span>
-        <span class="skill-tag">Java</span>
         <span class="skill-tag">Deep Learning</span>
         <span class="skill-tag">ROS</span>
         <span class="skill-tag">MATLAB</span>
@@ -72,28 +78,41 @@
 
     <h2 class="section-title">Experience</h2>
     <div class="job-entry">
-        <p class="job-title">Automotive Perception Engineer</p>
+        <div class="title-with-date">
+            <p class="job-title">Automotive Perception Engineer</p>
+            <p class="job-date">(03/2022 - Present)</p>
+        </div>
         <p class="job-company">Mitsubishi Electric Automotive America</p>
-        <p class="job-date">03/2022 - Present</p>
     </div>
 
     <div class="job-entry">
-        <p class="job-title">Application Engineer</p>
+        <div class="title-with-date">
+            <p class="job-title">Application Engineer</p>
+            <p class="job-date">(01/2022 - 03/2022)</p>
+        </div>
         <p class="job-company">Mitsubishi Electric Automotive America</p>
-        <p class="job-date">01/2022 - 03/2022</p>
     </div>
 
     <div class="job-entry">
-        <p class="job-title">Machine Learning Research Intern</p>
+        <div class="title-with-date">
+            <p class="job-title">Machine Learning Research Intern</p>
+            <p class="job-date">(05/2021 - 12/2021)</p>
+        </div>
         <p class="job-company">Mitsubishi Electric Automotive America</p>
-        <p class="job-date">05/2021 - 12/2021</p>
     </div>
 
     <h2 class="section-title">Education</h2>
     <div class="education-entry">
+        <div class="title-with-date">
+            <p class="education-title">Master of Science in Computer Science</p>
+            <p class="job-date">(09/2024 - Present)</p>
+        </div>
+        <p class="education-institution">University of Michigan, Ann Arbor</p>
+    </div>
+
+    <div class="education-entry">
         <p class="education-title">BE: Robotics and Mechatronic Systems Engineering</p>
         <p class="education-institution">University of Detroit Mercy</p>
-        <p class="education-date">08/2017 - 12/2021</p>
         <p>
             • Engineering Student of the Year 2021
             • IEEE Outstanding Senior 2021
