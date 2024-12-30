@@ -8,14 +8,14 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            max-width: 800px;
+            max-width: 1200px;  /* Increased from 800px */
             margin: 0;
             padding: 20px;
             text-align: left;
             line-height: 1.6;
         }
         nav {
-            margin-bottom: 30px;  /* Reduced from 50px */
+            margin-bottom: 30px;
             text-align: left;
         }
         nav a {
@@ -31,15 +31,16 @@
         }
         .content-container {
             display: flex;
-            gap: 30px;
+            gap: 50px;  /* Increased gap between text and image */
             align-items: flex-start;
-            margin-top: 40px;  /* Reduced from 100px */
+            margin-top: 40px;
         }
         .text-container {
-            flex: 1;
+            flex: 2;  /* Increased from 1 to take up more space */
+            max-width: 800px;  /* Added max-width for text container */
         }
         .intro-text {
-            font-size: 16px;  /* Reduced from 18px */
+            font-size: 16px;
             color: #333;
             text-align: left;
             font-family: 'Roboto', sans-serif;
@@ -51,6 +52,7 @@
         .profile-image {
             width: 300px;
             height: auto;
+            flex: 0 0 auto;  /* Prevents image from shrinking */
         }
     </style>
 </head>
