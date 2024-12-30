@@ -3,82 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Ahmad Chalhoub - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+            max-width: 1200px;
+            margin: 0;
             padding: 20px;
             line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #666;
         }
         .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: left;
+            margin-bottom: 30px;
         }
         .section-title {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
-            margin-top: 20px;
+            margin-top: 25px;
+            font-size: 20px;
         }
         .job-entry, .education-entry {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .job-title, .education-title {
-            font-weight: bold;
-            margin-bottom: 5px; /* Added to reduce space */
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-size: 16px;
         }
         .job-company, .education-institution {
             color: #555;
-            margin-top: 0; /* Reduced top margin */
+            margin-top: 0;
+            font-size: 16px;
         }
         .job-date, .education-date {
             color: #777;
             font-style: italic;
-            font-size: 0.85em;
+            font-size: 14px;
             font-weight: normal;
         }
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
+            margin: 15px 0;
         }
         .skill-tag {
-            background-color: #f0f0f0;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 0.9em;
+            background-color: #f5f5f5;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
         }
         .title-with-date {
             display: flex;
             align-items: baseline;
-            gap: 10px;
-            margin-bottom: 5px; /* Reduced space */
+            justify-content: space-between;
+            margin-bottom: 5px;
         }
-        .education-entry p {
-            margin: 5px 0; /* Consistent spacing */
+        .job-description {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
     <div class="contact-info">
         <h1>Ahmad Chalhoub</h1>
-        <p>Detroit, MI | 313-652-6093 | aachalho@umich.edu</p>
+        <p>Detroit, MI | 313-652-6093 | chalhoah@udmercy.edu</p>
     </div>
 
     <h2 class="section-title">Objective</h2>
-    <p>Robotics and Mechatronic Systems Engineering graduate from the University of Detroit Mercy, currently an Application Engineer at Mitsubishi Electric Automotive America, Inc. Experienced in developing Machine Learning applications for automotive industry, specifically for embedded systems and infotainment solutions.</p>
+    <p>Ahmad is a Robotics and Mechatronic Systems Engineering graduate from the University of Detroit Mercy, and currently an Application Engineer at Mitsubishi Electric Automotive America, Inc. working on and experienced in developing Machine Learning applications for the automotive industry, specifically for embedded systems and infotainment solutions.</p>
 
     <h2 class="section-title">Hard Skills</h2>
     <div class="skills-list">
         <span class="skill-tag">Python</span>
-        <span class="skill-tag">PyTorch</span>
-        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">TensorFlow / Keras</span>
         <span class="skill-tag">C++</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Linux</span>
         <span class="skill-tag">Deep Learning</span>
-        <span class="skill-tag">ROS2</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">ROS</span>
         <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Confluence</span>
+        <span class="skill-tag">SysML</span>
+    </div>
+
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="skills-list">
+        <span class="skill-tag">Teamwork</span>
+        <span class="skill-tag">Time Management</span>
+        <span class="skill-tag">Bilingual</span>
+        <span class="skill-tag">Communication</span>
         <span class="skill-tag">Agile (Scrum)</span>
     </div>
 
@@ -86,7 +130,22 @@
     <div class="job-entry">
         <div class="title-with-date">
             <p class="job-title">Automotive Perception Engineer</p>
-            <p class="job-date">(03/2022 - Present)</p>
+            <p class="job-date">03/2022 - Present</p>
+        </div>
+        <p class="job-company">Mitsubishi Electric Automotive America</p>
+        <div class="job-description">
+            <ul>
+                <li>Deploying Deep Learning implementations for ADAS vision use-cases</li>
+                <li>Setting system requirements according to customer project needs</li>
+                <li>Setting up and configuring development environments targeted for GPU usage (CUDA, cudNN, TensorFlow, etc...)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="job-entry">
+        <div class="title-with-date">
+            <p class="job-title">Application Engineer</p>
+            <p class="job-date">01/2022 - 03/2022</p>
         </div>
         <p class="job-company">Mitsubishi Electric Automotive America</p>
     </div>
@@ -94,32 +153,51 @@
     <div class="job-entry">
         <div class="title-with-date">
             <p class="job-title">Machine Learning Research Intern</p>
-            <p class="job-date">(05/2021 - 12/2021)</p>
+            <p class="job-date">05/2021 - 12/2021</p>
         </div>
         <p class="job-company">Mitsubishi Electric Automotive America</p>
+        <div class="job-description">
+            <ul>
+                <li>Lead the effort to build MEAA's first in-house High-Performance Compute machine</li>
+                <li>Developed a Deep Learning vision solution that was tested on Qualcomm's SoC</li>
+                <li>Collected, cleaned, and organized data for training Deep Learning models</li>
+                <li>Researched and tested different Deep Learning models and frameworks supported by Qualcomm's Neural SDK</li>
+                <li>Created documentation for the full DL development pipeline for use as a reference by other engineers/teams</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="job-entry">
+        <div class="title-with-date">
+            <p class="job-title">Deep Learning / Machine Learning Researcher</p>
+            <p class="job-date">05/2020 - 12/2020</p>
+        </div>
+        <p class="job-company">University of Detroit Mercy</p>
+        <div class="job-description">
+            <ul>
+                <li>Built simple CNN models for image classification</li>
+                <li>Studied the main mathematical concepts involved in Machine Learning models</li>
+                <li>Developed knowledge of Python significantly</li>
+            </ul>
+        </div>
     </div>
 
     <h2 class="section-title">Education</h2>
     <div class="education-entry">
         <div class="title-with-date">
-            <p class="education-title">Master of Science in Computer Science</p>
-            <p class="job-date">(09/2024 - Present)</p>
+            <p class="education-title">BE: Robotics and Mechatronic Systems Engineering</p>
+            <p class="education-date">08/2017 - 12/2021</p>
         </div>
-        <p class="education-institution">University of Michigan, Ann Arbor</p>
-    </div>
-
-    <div class="education-entry">
-        <p class="education-title">BE: Robotics and Mechatronic Systems Engineering</p>
         <p class="education-institution">University of Detroit Mercy</p>
-        <p>
-            • Engineering Student of the Year 2021
-            • IEEE Outstanding Senior 2021
-        </p>
+        <ul>
+            <li>Engineering Student of the Year 2021</li>
+            <li>IEEE Outstanding Senior 2021</li>
+        </ul>
     </div>
 
     <h2 class="section-title">Projects & Achievements</h2>
     <ul>
-        <li>3rd Place Winners in IGVC Competition 2021</li>
+        <li>3rd Place Winners in IGVC Competition</li>
         <li>Traffic Sign Detection and Localization for Autonomous EV (Neural Networks, Velodyne Lidar)</li>
     </ul>
 </body>
