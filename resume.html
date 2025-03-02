@@ -8,10 +8,10 @@
     <style>
         body {
             font-family: 'Merriweather', serif;
-            max-width: 750px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            text-align: center;
+            text-align: left;
             line-height: 1.7;
             color: #333;
             background-color: #f9f9f9;
@@ -35,25 +35,41 @@
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             margin-top: 25px;
-            font-size: 20px;
-            text-align: left;
-        }
-        .content-container {
-            text-align: left;
+            font-size: 22px;
+            font-weight: bold;
         }
         .contact-info {
+            text-align: center;
             margin-bottom: 20px;
             font-size: 18px;
         }
         .resume-link {
             display: block;
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 18px;
+            text-align: center;
             color: #0073e6;
             text-decoration: none;
         }
         .resume-link:hover {
             text-decoration: underline;
+        }
+        .job-entry {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .job-date {
+            font-style: italic;
+            color: #777;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -72,24 +88,30 @@
     <p>Driven Perception Engineer leading advanced 3D sensor fusion and real-time deep learning initiatives for Mitsubishi Electric’s HubPilot project, while pursuing a Master’s in Computer Science and Engineering at the University of Michigan, Ann Arbor.</p>
 
     <h2 class="section-title">Experience</h2>
-    <p><strong>Automotive Perception Engineer III</strong> - Mitsubishi Electric Automotive America (MEAA) | Sep 2024 - Present</p>
-    <ul>
-        <li>Lead the end-to-end development, integration, and testing of HubPilot’s on-board vehicle perception system (HubDrive), surpassing demanding accuracy requirements.</li>
-        <li>Research, prototype, and develop advanced 3D perception models, emphasizing sensor fusion approaches.</li>
-        <li>Solely designed, developed, deployed, and tested HubPilot’s YardPass feature.</li>
-        <li>Plan and manage data collection and labeling pipelines for model training.</li>
-        <li>Optimize deep learning models and perception software for NVIDIA embedded SoCs.</li>
-        <li>Collaborate with cross-functional engineering teams in Japan and research scientists at MERL (Mitsubishi Electric Research Labs) for various development efforts.</li>
-    </ul>
+    <div class="job-entry">
+        <p class="job-title">Automotive Perception Engineer III - Mitsubishi Electric Automotive America (MEAA)</p>
+        <p class="job-date">Sep 2024 - Present</p>
+        <ul>
+            <li>Lead the end-to-end development, integration, and testing of HubPilot’s on-board vehicle perception system (HubDrive), surpassing demanding accuracy requirements.</li>
+            <li>Research, prototype, and develop advanced 3D perception models, emphasizing sensor fusion approaches.</li>
+            <li>Solely designed, developed, deployed, and tested HubPilot’s YardPass feature.</li>
+            <li>Plan and manage data collection and labeling pipelines for model training.</li>
+            <li>Optimize deep learning models and perception software for NVIDIA embedded SoCs.</li>
+            <li>Collaborate with cross-functional engineering teams in Japan and research scientists at MERL (Mitsubishi Electric Research Labs) for various development efforts.</li>
+        </ul>
+    </div>
     
-    <p><strong>Automotive Perception Engineer II</strong> - MEAA | Jan 2022 - Sep 2024</p>
-    <ul>
-        <li>Spearheaded the design and development of HubPilot’s HubDrive system from concept to initial deployment, ensuring robust architecture and on-schedule delivery.</li>
-        <li>Orchestrated end-to-end data collection and labeling efforts for multiple RGB camera deep learning models, guaranteeing high-quality datasets for model accuracy.</li>
-        <li>Supported the deployment of deep learning perception pipelines across various ADAS vision use cases.</li>
-        <li>Developed comprehensive flow diagrams detailing the entire perception system design.</li>
-        <li>Translated overall system and customer requirements into multi-level perception specifications.</li>
-    </ul>
+    <div class="job-entry">
+        <p class="job-title">Automotive Perception Engineer II - MEAA</p>
+        <p class="job-date">Jan 2022 - Sep 2024</p>
+        <ul>
+            <li>Spearheaded the design and development of HubPilot’s HubDrive system from concept to initial deployment, ensuring robust architecture and on-schedule delivery.</li>
+            <li>Orchestrated end-to-end data collection and labeling efforts for multiple RGB camera deep learning models, guaranteeing high-quality datasets for model accuracy.</li>
+            <li>Supported the deployment of deep learning perception pipelines across various ADAS vision use cases.</li>
+            <li>Developed comprehensive flow diagrams detailing the entire perception system design.</li>
+            <li>Translated overall system and customer requirements into multi-level perception specifications.</li>
+        </ul>
+    </div>
     
     <h2 class="section-title">Education</h2>
     <p><strong>MEng in Computer Science & Engineering</strong> - University of Michigan Ann Arbor | Aug 2024 - Present</p>
