@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research — Ahmad Chalhoub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0073e6;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .page-intro {
+            font-size: 17px;
+            margin-bottom: 35px;
+            color: #555;
+        }
+        .paper {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .paper:last-child {
+            border-bottom: none;
+        }
+        .paper-title {
+            font-size: 19px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            line-height: 1.4;
+        }
+        .paper-title a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+        .paper-title a:hover {
+            color: #0073e6;
+        }
+        .paper-authors {
+            font-size: 16px;
+            margin: 0 0 6px 0;
+            color: #444;
+        }
+        .paper-authors .me {
+            font-weight: 700;
+            color: #222;
+        }
+        .paper-venue {
+            font-size: 15px;
+            font-style: italic;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+        .paper-summary {
+            font-size: 16px;
+            margin: 10px 0 12px 0;
+        }
+        .paper-links {
+            font-size: 15px;
+        }
+        .paper-links a {
+            color: #0073e6;
+            text-decoration: none;
+            margin-right: 14px;
+            font-weight: 500;
+        }
+        .paper-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <h1>Research</h1>
+    <p class="page-intro">A list of papers I've contributed to. My research interests center on perception, sensor fusion, and Vision-Language-Action models for autonomous driving.</p>
+
+    <div class="paper">
+        <p class="paper-title">
+            <a href="https://arxiv.org/abs/2605.17284" target="_blank" rel="noopener noreferrer">CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving</a>
+        </p>
+        <p class="paper-authors">
+            Ruiyang Zhu, Yuehan He, Boyuan Zheng, Zesen Zhao, <span class="me">Ahmad Chalhoub</span>, Qingzhao Zhang, Z. Morley Mao
+        </p>
+        <p class="paper-venue">arXiv preprint, 2026</p>
+        <p class="paper-summary">
+            A location-aware adaptation framework that augments a frozen VLA driving model with per-roadblock soft prompts, optimized from crowdsourced data and retrieved on demand via V2X communication. CLAP uses supervised contrastive learning to discover roadblock-specific hard-scene directions, then applies directionally regularized prompt optimization to selectively improve challenging frames without regressing normal ones. On the NAVSIM benchmark, CLAP reduces challenging-scenario planning error by 24% across multiple state-of-the-art VLA backbones.
+        </p>
+        <p class="paper-links">
+            <a href="https://arxiv.org/abs/2605.17284" target="_blank" rel="noopener noreferrer">abstract</a>
+            <a href="https://arxiv.org/pdf/2605.17284" target="_blank" rel="noopener noreferrer">pdf</a>
+        </p>
+    </div>
+
+</body>
+</html>
